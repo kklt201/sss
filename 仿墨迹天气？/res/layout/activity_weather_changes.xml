@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rl_changes_background" >
+
+    <RelativeLayout
+        android:id="@+id/rl_changes_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/iv_changes_tittle_citys"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/iv_changes_tittle_citys" />
+
+        <Button
+            
+            android:id="@+id/btn_changes_tittle_location"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="4dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/btn_changes_tittle_location"
+            android:text="浦东"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/iv_changes_tittle_more"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:src="@drawable/iv_changes_tittle_more" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/rl_changes_center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rl_changes_tittle" >
+
+        <TextView
+            android:layout_toLeftOf="@+id/btn_changes_center_today"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="15日天气预报" />
+
+        <Button
+             android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            android:src="#ffffffff"
+            android:id="@+id/btn_changes_center_tomorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="明天详情" />
+
+        <Button
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textColor="#ffffff"
+            android:id="@+id/btn_changes_center_today"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/btn_changes_center_tomorrow"
+            android:text="今天详情" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_changes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_changes_center" >
+
+    </ListView>
+
+</RelativeLayout>

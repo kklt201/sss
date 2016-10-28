@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal" 
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tv_item_list_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="9/21" />
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/tv_item_list_dayinweek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="今天" />
+
+    <ImageView
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:id="@+id/iv_item_list_icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_weather_snow" />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2"
+        android:id="@+id/iv_item_list_cloudy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="多云" />
+
+    <TextView
+        android:layout_weight="2"
+        android:id="@+id/tv_item_list_temperature"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="19-27.C" />
+
+</LinearLayout>
